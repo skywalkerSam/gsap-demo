@@ -25,10 +25,10 @@ export default function HomePage() {
               href={"/" + route}
               // target="_blank"
             >
-              <h3 className="text-2xl font-bold">{route} →</h3>
+              
               <div className="text-lg">
                 {
-                  <span>
+                  <h2 className="text-3xl font-semibold">
                     {route
                       .replace("gsap", "GSAP")
                       .replace("-", " ")
@@ -39,13 +39,14 @@ export default function HomePage() {
                       .replace("stagger", "Stagger")
                       .replace("scrolltrigger", "ScrollTrigger")
                       .replace("text", "Text")}
-                  </span>
+                  </h2>
                 }
                 {/* <span>{route.slice(0, 4).toUpperCase() + " "}</span>
                 <span>{route.charAt(5).toUpperCase()}</span>
                 <span>{route.slice(6)}</span>
                 <span>{route.charAt(9) === "t" ? route.charAt(9).toUpperCase() + route.slice(10): ""}</span> */}
               </div>
+              <p className="font-light">{"/" + route} →</p>
             </Link>
           ))}
         </div>

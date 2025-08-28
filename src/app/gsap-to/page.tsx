@@ -5,8 +5,8 @@ import { useGSAP } from "@gsap/react";
 
 export default function ToPage() {
   useGSAP(() => {
-    gsap.to("#g-box", {
-      y: 360,
+    gsap.to("#orange-box", {
+      y: 300,
       rotation: 360,
       borderRadius: "100%",
       duration: 1,
@@ -17,8 +17,8 @@ export default function ToPage() {
   });
 
   useGSAP(() => {
-    gsap.to("#g-box-2", {
-      x: 720,
+    gsap.to("#orange-box-2", {
+      x: 450,
       rotation: 360,
       borderRadius: "100%",
       duration: 1,
@@ -50,6 +50,7 @@ export default function ToPage() {
             href="https://greensock.com/docs/v3/GSAP/gsap.to()"
             target="_blank"
             rel="noreferrer noopener nofollow"
+            className="hover:text-green-600"
           >
             gsap.to()
           </a>
@@ -58,11 +59,11 @@ export default function ToPage() {
       </p>
 
       <div className="mt-20 justify-items-end">
-        <div id="g-box" className="bg-primary h-20 w-20 rounded-lg" />
+        <div id="orange-box" className="h-20 w-20 rounded-lg bg-orange-400" />
       </div>
 
-      <div className="mt-20 justify-items-start">
-        <div id="g-box-2" className="bg-primary h-20 w-20 rounded-lg" />
+      <div className="mt-20 justify-items-center">
+        <div id="orange-box-2" className="h-20 w-20 rounded-lg bg-orange-400" />
       </div>
     </main>
   );

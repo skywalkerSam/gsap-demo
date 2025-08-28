@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function FromPage() {
   useGSAP(() => {
-    gsap.from("#green-box", {
+    gsap.from("#orange-box", {
       y: 360,
       rotation: 360,
       borderRadius: "100%",
@@ -17,11 +17,11 @@ export default function FromPage() {
   });
 
   useGSAP(() => {
-    gsap.from("#green-box-2", {
-      x: 360,
+    gsap.from("#orange-box-2", {
+      x: -360,
       rotation: 360,
       borderRadius: "100%",
-      duration: 1,
+      duration: 2,
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true,
@@ -52,6 +52,8 @@ export default function FromPage() {
             href="https://greensock.com/docs/v3/GSAP/gsap.from()"
             target="_blank"
             rel="noreferrer noopener nofollow"
+          className="hover:text-green-600"
+
           >
             gsap.from()
           </a>
@@ -59,11 +61,11 @@ export default function FromPage() {
         method.
       </p>
 
-      <div className="mt-20">
-        <div id="green-box" className="bg-primary h-20 w-20 rounded-lg" />
+      <div className="mt-20 justify-items-end">
+        <div id="orange-box" className="bg-orange-400 h-20 w-20 rounded-lg" />
       </div>
-      <div className="mt-20">
-        <div id="green-box-2" className="bg-primary h-20 w-20 rounded-lg" />
+      <div className="mt-20 justify-items-end">
+        <div id="orange-box-2" className="bg-orange-400 h-20 w-20 rounded-lg" />
       </div>
     </main>
   );

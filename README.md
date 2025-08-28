@@ -2,7 +2,7 @@
     <a href="https://skywalkerSam.dev">
         <img src="https://github.com/starboy-inc.png" alt="Starboy Logo" height=128>
     </a>
-    <h1><a href="https://gsap-demo-pi.vercel.app/">GSAP Demo</a></h1>
+    <h1><a href="https://gsap-demo.skywalkersam.dev">GSAP Demo</a></h1>
 
 </div>
 
@@ -11,6 +11,7 @@
 ## Domains
 
 - [gsap-demo-pi.vercel.app](https://gsap-demo-pi.vercel.app/)
+- [gsap-demo.skywalkersam.dev](https://gsap-demo.skywalkersam.dev)
 
 &nbsp;
 
@@ -20,7 +21,7 @@
 
 &nbsp;
 
-Until Next Time...✌️
+Until Next Time... ✌️
 
 &nbsp;
 

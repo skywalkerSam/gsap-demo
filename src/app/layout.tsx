@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="bg-gradient-to-b from-transparent via-primary-foreground to-transparent">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
