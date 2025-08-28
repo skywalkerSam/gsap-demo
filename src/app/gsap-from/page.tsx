@@ -6,10 +6,22 @@ import { useGSAP } from "@gsap/react";
 export default function FromPage() {
   useGSAP(() => {
     gsap.from("#green-box", {
-      x: 250,
+      y: 360,
       rotation: 360,
       borderRadius: "100%",
-      duration: 2,
+      duration: 1,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+  });
+
+  useGSAP(() => {
+    gsap.from("#green-box-2", {
+      x: 360,
+      rotation: 360,
+      borderRadius: "100%",
+      duration: 1,
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true,
@@ -17,7 +29,7 @@ export default function FromPage() {
   });
 
   return (
-    <main className="min-h-screen">
+    <main>
       <h1 className="text-6xl">GSAP From</h1>
 
       <p className="mt-5">
@@ -35,18 +47,23 @@ export default function FromPage() {
 
       <p className="mt-5">
         Read more about the{" "}
-        <a
-          href="https://greensock.com/docs/v3/GSAP/gsap.from()"
-          target="_blank"
-          rel="noreferrer noopener nofollow"
-        >
-          gsap.from()
-        </a>{" "}
+        <em>
+          <a
+            href="https://greensock.com/docs/v3/GSAP/gsap.from()"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+          >
+            gsap.from()
+          </a>
+        </em>{" "}
         method.
       </p>
 
       <div className="mt-20">
-        <div id="green-box" className="h-20 w-20 rounded-lg bg-primary" />
+        <div id="green-box" className="bg-primary h-20 w-20 rounded-lg" />
+      </div>
+      <div className="mt-20">
+        <div id="green-box-2" className="bg-primary h-20 w-20 rounded-lg" />
       </div>
     </main>
   );
