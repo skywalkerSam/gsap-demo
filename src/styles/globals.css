@@ -137,7 +137,7 @@
   }
 
   main {
-    @apply mx-auto max-w-3xl p-10 xl:max-w-5xl;
+    @apply mx-auto min-h-screen max-w-3xl p-10 xl:max-w-5xl;
   }
 
   /* a {
