@@ -12,16 +12,16 @@ const routes: string[] = [
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-transparent via-green-600 to-transparent text-white">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          <span className="text-green-400">GSAP</span> Demo
+        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+          <span className="text-primary">GSAP</span> Demo
         </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           {routes.map((route) => (
             <Link
               key={route}
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
               href={"/" + route}
               // target="_blank"
             >
@@ -50,6 +50,6 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

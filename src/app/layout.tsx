@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
-      <body>
+      <body className="bg-gradient-to-b from-transparent via-primary-foreground to-transparent">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
