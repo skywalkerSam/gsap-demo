@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
-export default function ScrollTriggerPage() {
+export default function AnimatedTextPage() {
   const container = useRef<HTMLElement | null>(null);
 
   useGSAP(() => {
