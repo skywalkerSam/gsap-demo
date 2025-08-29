@@ -14,9 +14,7 @@ export default function ToPage() {
       repeat: -1,
       yoyo: true, // will make the animation reverse on every other cycle
     });
-  });
 
-  useGSAP(() => {
     gsap.to("#black-box", {
       x: 430,
       rotation: 360,

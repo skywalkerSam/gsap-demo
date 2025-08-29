@@ -13,20 +13,22 @@ export default function StaggerPage() {
       // ease: "bounce.Out",
       repeat: -1,
       yoyo: true,
-      // stagger: 0.5,
       stagger: {
-        amount: 0.5, // the amount of time to stagger the animations between each element
-        grid: [2, 1], // the number of columns and rows in the grid
-        axis: "y", // the axis along which to stagger the animations
-        // ease: "circ.inOut",
-        // ease: "bounce.Out",
-        from: "edges", // the starting position of the staggered animations
+        each: 0.07,
+        from: "edges",
       },
+      // stagger: 0.5,
+      // stagger: {
+      //   amount: 0.5, // the amount of time to stagger the animations between each element
+      //   grid: [2, 1], // the number of columns and rows in the grid
+      //   axis: "y", // the axis along which to stagger the animations
+      //   // ease: "circ.inOut",
+      //   // ease: "bounce.Out",
+      //   from: "edges", // the starting position of the staggered animations
+      // },
       duration: 0.9,
     });
-  });
 
-  useGSAP(() => {
     gsap.to(".stagger-box-2", {
       y: -70,
       rotation: 90,
@@ -35,14 +37,18 @@ export default function StaggerPage() {
       // ease: "bounce.Out",
       repeat: -1,
       yoyo: true,
-      // stagger: 0.5,
       stagger: {
-        amount: 0.5, // the amount of time to stagger the animations between each element
-        grid: [2, 1], // the number of columns and rows in the grid
-        axis: "y", // the axis along which to stagger the animations
-        // ease: "circ.inOut",
-        from: "edges", // the starting position of the staggered animations
+        each: 0.07,
+        from: "edges",
       },
+      // stagger: 0.5,
+      // stagger: {
+      //   amount: 0.5, // the amount of time to stagger the animations between each element
+      //   grid: [2, 1], // the number of columns and rows in the grid
+      //   axis: "y", // the axis along which to stagger the animations
+      //   // ease: "circ.inOut",
+      //   from: "edges", // the starting position of the staggered animations
+      // },
       duration: 0.9,
     });
   });

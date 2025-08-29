@@ -2,8 +2,11 @@
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 export default function FromPage() {
+  const container = useRef<HTMLDivElement>(null);
+
   useGSAP(() => {
     gsap.from("#white-box", {
       y: 360,
@@ -14,9 +17,7 @@ export default function FromPage() {
       repeat: -1,
       yoyo: true,
     });
-  });
 
-  useGSAP(() => {
     gsap.from("#black-box", {
       x: -360,
       rotation: 360,
@@ -26,10 +27,10 @@ export default function FromPage() {
       repeat: -1,
       yoyo: true,
     });
-  });
+  }, {scope: container});
 
   return (
-    <main>
+    <main ref={container}>
       <h1 className="text-6xl">GSAP From</h1>
 
       <p className="mt-5">
@@ -52,8 +53,7 @@ export default function FromPage() {
             href="https://greensock.com/docs/v3/GSAP/gsap.from()"
             target="_blank"
             rel="noreferrer noopener nofollow"
-          className="hover:text-green-600"
-
+            className="hover:text-green-600"
           >
             gsap.from()
           </a>
@@ -62,10 +62,10 @@ export default function FromPage() {
       </p>
 
       <div className="mt-20 justify-items-end">
-        <div id="white-box" className="bg-white/60 h-20 w-20 rounded-lg" />
+        <div id="white-box" className="h-20 w-20 rounded-lg bg-white/60" />
       </div>
       <div className="mt-20 justify-items-end">
-        <div id="black-box" className="bg-black/80 h-20 w-20 rounded-lg" />
+        <div id="black-box" className="h-20 w-20 rounded-lg bg-black/80" />
       </div>
     </main>
   );
