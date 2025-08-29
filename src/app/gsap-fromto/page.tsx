@@ -6,7 +6,7 @@ import gsap from "gsap";
 export default function FromToPage() {
   useGSAP(() => {
     gsap.fromTo(
-      "#orange-box",
+      "#white-box",
       {
         x: 0,
         rotation: 0,
@@ -57,7 +57,7 @@ export default function FromToPage() {
       </p>
 
       <div className="mt-20 justify-items-end">
-        <div id="orange-box" className="h-20 w-20 rounded-lg bg-orange-400" />
+        <div id="white-box" className="h-20 w-20 rounded-lg bg-white/60" />
       </div>
     </main>
   );

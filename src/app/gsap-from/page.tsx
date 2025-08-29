@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function FromPage() {
   useGSAP(() => {
-    gsap.from("#orange-box", {
+    gsap.from("#white-box", {
       y: 360,
       rotation: 360,
       borderRadius: "100%",
@@ -17,7 +17,7 @@ export default function FromPage() {
   });
 
   useGSAP(() => {
-    gsap.from("#orange-box-2", {
+    gsap.from("#black-box", {
       x: -360,
       rotation: 360,
       borderRadius: "100%",
@@ -62,10 +62,10 @@ export default function FromPage() {
       </p>
 
       <div className="mt-20 justify-items-end">
-        <div id="orange-box" className="bg-orange-400 h-20 w-20 rounded-lg" />
+        <div id="white-box" className="bg-white/60 h-20 w-20 rounded-lg" />
       </div>
       <div className="mt-20 justify-items-end">
-        <div id="orange-box-2" className="bg-orange-400 h-20 w-20 rounded-lg" />
+        <div id="black-box" className="bg-black/80 h-20 w-20 rounded-lg" />
       </div>
     </main>
   );

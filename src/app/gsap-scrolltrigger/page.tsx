@@ -89,11 +89,11 @@ export default function ScrollTriggerPage() {
       <div className="mt-20 h-screen w-full justify-items-center" ref={scrollRef}>
         <div
           id="scroll-pink"
-          className="scroll-box h-20 w-20 rounded-xl bg-sky-950/30"
+          className="scroll-box h-20 w-20 rounded-xl bg-sky-400/60"
         />
         <div
           id="scroll-orange"
-          className="scroll-box h-20 w-20 rounded-xl bg-blue-950/30"
+          className="scroll-box h-20 w-20 rounded-xl bg-yellow-400/60"
         />
       </div>
     </main>

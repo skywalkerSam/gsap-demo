@@ -8,7 +8,7 @@ export default function TimelinePage() {
   const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1, yoyo: true });
 
   useGSAP(() => {
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       y: 210,
       rotation: 180,
       borderRadius: "10%",
@@ -16,7 +16,7 @@ export default function TimelinePage() {
       ease: "back.inOut",
     });
 
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       x: 210,
       scale: 1.1,
       rotation: 360,
@@ -25,7 +25,7 @@ export default function TimelinePage() {
       ease: "back.inOut",
     });
 
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       y: -69,
       scale: 1.2,
       rotation: 540,
@@ -34,7 +34,7 @@ export default function TimelinePage() {
       ease: "back.inOut",
     });
 
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       x: 450,
       scale: 1.3,
       rotation: 720,
@@ -43,7 +43,7 @@ export default function TimelinePage() {
       ease: "back.inOut",
     });
 
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       y: 120,
       scale: 1.4,
       rotation: 900,
@@ -52,7 +52,7 @@ export default function TimelinePage() {
       ease: "back.inOut",
     });
 
-    timeline.to("#orange-box", {
+    timeline.to("#amber-box", {
       x: 900,
       scale: 2,
       rotation: 1180,
@@ -142,7 +142,7 @@ export default function TimelinePage() {
           )}
         </Button>
 
-        <div id="orange-box" className="h-20 w-20 bg-orange-400" />
+        <div id="amber-box" className="h-20 w-20 bg-amber-400/60" />
       </div>
     </main>
   );

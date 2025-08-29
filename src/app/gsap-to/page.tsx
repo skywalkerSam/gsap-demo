@@ -5,8 +5,8 @@ import { useGSAP } from "@gsap/react";
 
 export default function ToPage() {
   useGSAP(() => {
-    gsap.to("#orange-box", {
-      y: 300,
+    gsap.to("#white-box", {
+      y: 160,
       rotation: 360,
       borderRadius: "100%",
       duration: 1,
@@ -17,8 +17,8 @@ export default function ToPage() {
   });
 
   useGSAP(() => {
-    gsap.to("#orange-box-2", {
-      x: 450,
+    gsap.to("#black-box", {
+      x: 430,
       rotation: 360,
       borderRadius: "100%",
       duration: 1,
@@ -59,11 +59,11 @@ export default function ToPage() {
       </p>
 
       <div className="mt-20 justify-items-end">
-        <div id="orange-box" className="h-20 w-20 rounded-lg bg-orange-400" />
+        <div id="white-box" className="h-20 w-20 rounded-xl bg-white/60" />
       </div>
 
       <div className="mt-20 justify-items-center">
-        <div id="orange-box-2" className="h-20 w-20 rounded-lg bg-orange-400" />
+        <div id="black-box" className="h-20 w-20 rounded-xl bg-black/80" />
       </div>
     </main>
   );

@@ -81,24 +81,24 @@ export default function StaggerPage() {
 
       <div className="mt-20 justify-items-center">
         <div className="flex gap-5">
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-500/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-600/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-700/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-800/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-900/20" />
-          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-950/20" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
+          <div className="stagger-box h-20 w-20 rounded-xl bg-sky-400/60" />
         </div>
       </div>
       <div className="mt-20 justify-items-center">
         <div className="flex gap-5">
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-400/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-500/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-600/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-700/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-800/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-900/20" />
-          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-blue-950/20" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
+          <div className="stagger-box-2 h-20 w-20 rounded-xl bg-yellow-400/60" />
         </div>
       </div>
     </main>
