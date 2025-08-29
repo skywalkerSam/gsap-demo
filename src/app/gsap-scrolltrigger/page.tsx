@@ -13,9 +13,15 @@ export default function ScrollTriggerPage() {
 
   useGSAP(
     () => {
+      if (!scrollRef.current) return;
+      // get all the boxes within the scoped container
+      const boxes = gsap.utils.toArray<HTMLElement>(
+        ".scroll-box",
+        scrollRef.current,
+      );
+
       // get all the boxes in the scrollRef
-      const boxes = gsap.utils.toArray<HTMLElement>(".scroll-box");
-      // const boxes = gsap.utils.toArray(scrollRef.current.children);
+      // const boxes = gsap.utils.toArray<HTMLElement>(".scroll-box");
 
       boxes.forEach((box) => {
         gsap.to(box, {
@@ -88,7 +94,10 @@ export default function ScrollTriggerPage() {
         </svg>
       </div>
 
-      <div className="mt-20 h-screen w-full justify-items-center" ref={scrollRef}>
+      <div
+        className="mt-20 h-screen w-full justify-items-center"
+        ref={scrollRef}
+      >
         <div
           id="scroll-pink"
           className="scroll-box h-20 w-20 rounded-xl bg-sky-400/60"
