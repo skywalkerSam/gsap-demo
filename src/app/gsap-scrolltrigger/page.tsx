@@ -23,9 +23,9 @@ export default function ScrollTriggerPage() {
       // get all the boxes in the scrollRef
       // const boxes = gsap.utils.toArray<HTMLElement>(".scroll-box");
 
-      boxes.forEach((box) => {
+      boxes.forEach((box, i) => {
         gsap.to(box, {
-          y: 180 * (boxes.indexOf(box) + 0.9),
+          y: 180 * (i + 0.9),
           // x: 150 * (boxes.indexOf(box) + 4.5),
           rotation: 90,
           borderRadius: "60%",
@@ -36,7 +36,7 @@ export default function ScrollTriggerPage() {
             end: "top 30%", // end when the top of the box hits 20% from the top of the viewport
             scrub: true, // scrubbing makes the animation smooth
           },
-          ease: "power1.inOut",
+          // ease: "power1.inOut",
         });
       });
     },
