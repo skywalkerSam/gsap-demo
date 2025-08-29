@@ -8,12 +8,14 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ScrollTriggerPage() {
-  const scrollRef = useRef(0);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  // const scrollRef = useRef(0);
 
   useGSAP(
     () => {
       // get all the boxes in the scrollRef
-      const boxes = gsap.utils.toArray(scrollRef.current.children);
+      const boxes = gsap.utils.toArray<HTMLElement>(".scroll-box");
+      // const boxes = gsap.utils.toArray(scrollRef.current.children);
 
       boxes.forEach((box) => {
         gsap.to(box, {
