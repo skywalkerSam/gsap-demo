@@ -12,7 +12,7 @@ export default function ScrollTriggerPage() {
     });
 
     gsap.fromTo(
-      ".para",
+      ".paragraph",
       {
         opacity: 0,
         y: 20,
@@ -21,7 +21,7 @@ export default function ScrollTriggerPage() {
         ease: "power1.inOut",
         opacity: 1,
         y: 0,
-        delay: 0.5,
+        delay: 0.3,
         stagger: 0.1,
       },
     );
@@ -33,24 +33,24 @@ export default function ScrollTriggerPage() {
         GSAP Text
       </h1>
 
-      <p className="para mt-5">
+      <p className="paragraph mt-5">
         We can use same method like <code>gsap.to()</code>,{" "}
         <code>gsap.from()</code>, <code>gsap.fromTo()</code> and{" "}
         <code>gsap.timeline()</code> to animate text.
       </p>
 
-      <p className="para mt-5">
+      <p className="paragraph mt-5">
         Using these methods we can achieve various text animations and effects
         like fade in, fade out, slide in, slide out, and many more.
       </p>
 
-      <p className="para mt-5">
+      <p className="paragraph mt-5">
         For more advanced text animations and effects, you can explore the GSAP
         TextPlugin or other third-party libraries that specialize in text
         animations.
       </p>
 
-      <p className="para mt-5">
+      <p className="paragraph mt-5">
         Read more about the{" "}
         <em>
           <a
